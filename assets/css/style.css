@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color: darkorange;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bolder;
+    border: 10px 10px 10px 10px;
+    background-color: darkorange;
+    text-align: center;
+}
+
+#add-train-btn {
+    background-color: darkorange;
+    color: black;
+}
