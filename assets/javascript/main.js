@@ -44,4 +44,23 @@ $("#add-train-btn").on("click", function (event) {
 
 database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val());
-})
+
+    var tName = childSnapshot.val().name;
+    var tDestination = childSnapshot.val().destination;
+    var tTime = childSnapshot.val().time;
+    var tFrequency = childSnapshot.val().frequecy;
+
+    console.log(tName);
+    console.log(tDestination);
+    console.log(tTime);
+    console.log(tFrequency);
+
+    var newRow = $("<tr>").append(
+        $("<td>").text(tName),
+        $("<td>").text(tDestination),
+        $("<td>").text(tTime),
+        $("<td>").text(tFrequency),
+    );
+
+    $("#train-table > tbody").append(newRow);
+});
