@@ -1,23 +1,23 @@
 
 // Initialize Firebase
-  var config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    projectId: "<PROJECT_ID>",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
+var config = {
+    apiKey: "AIzaSyBEfYEc2gxiRiLRq3GF7quG67vaeEi1DiY",
+    authDomain: "train-activity-b3d04.firebaseapp.com",
+    databaseURL: "https://train-activity-b3d04.firebaseio.com",
+    projectId: "train-activity-b3d04",
+    storageBucket: "train-activity-b3d04.appspot.com",
+    messagingSenderId: "1085240119497"
   };
   firebase.initializeApp(config);
 
 var database = firebase.database();
 
 $("#add-train-btn").on("click", function (event) {
-    even.preventDefault();
+    event.preventDefault();
     // grabs user input
     var tName = $("#train-name-input").val().trim();
     var tDestination = $("#destination-input").val().trim();
-    var tTime = moment($("#first-time").val().trim(), "HH:mm").format("X");
+    var tTime = moment($("#time-input").val().trim(), "HH:mm").format("X");
     var tFrequency = $("#frequency-input").val().trim();
     //object for holding data
     var newTrain = {
