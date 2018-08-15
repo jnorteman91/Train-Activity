@@ -1,13 +1,14 @@
+
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyBEfYEc2gxiRiLRq3GF7quG67vaeEi1DiY",
-    authDomain: "train-activity-b3d04.firebaseapp.com",
-    databaseURL: "https://train-activity-b3d04.firebaseio.com",
-    projectId: "train-activity-b3d04",
-    storageBucket: "",
-    messagingSenderId: "1085240119497"
-};
-firebase.initializeApp(config);
+  var config = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    projectId: "<PROJECT_ID>",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+  firebase.initializeApp(config);
 
 var database = firebase.database();
 
